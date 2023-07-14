@@ -14,7 +14,7 @@ import Transaction from "./models/Transaction.js";
 import { kpis, products, transactions } from "./data/data.js";
 
 /* CONFIGURATIONS */
-dotenv.config()
+dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(helmet());
@@ -45,7 +45,6 @@ mongoose
     // KPI.insertMany(kpis);
     // Product.insertMany(products);
     // Transaction.insertMany(transactions);
-
   })
   .catch((error) => console.log(`${error} did not connect`));
 
